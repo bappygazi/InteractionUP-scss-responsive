@@ -465,6 +465,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
+  color: #000000;
 }
 
 #webs-tabs .container .tabs-content img {
@@ -680,9 +681,9 @@ section {
   margin-left: auto;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 320px;
+    max-width: 280px;
   }
 }
 
@@ -803,7 +804,7 @@ section {
   }
   #banner .container .banner-items .banner-item {
     height: 55px;
-    width: 260px;
+    width: 225px;
     padding: 8px 25px;
     border-radius: 20px;
     margin-top: 8px;
@@ -823,12 +824,15 @@ section {
   }
   #banner .container .banner-items .banner-item .banner-item-text h3 {
     margin: 0;
-    width: 80px;
-    font-size: 18px;
+    width: 67px;
+    font-size: 16px;
+  }
+  #banner .container .banner-items .banner-item .banner-item-text p {
+    font-size: 13px;
   }
   #banner .container .banner-items .banner-item .banner-item-text i {
     margin: 0;
-    width: 72px;
+    width: 60px;
     font-size: 25px;
     margin-left: 8px;
   }
@@ -946,7 +950,7 @@ section {
     margin-bottom: 15px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 10%;
+    top: 18%;
     left: 18%;
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
