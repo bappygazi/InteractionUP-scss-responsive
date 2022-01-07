@@ -64,6 +64,10 @@ section {
   background: #000000;
 }
 
+#navbar .responsive-menu {
+  display: none;
+}
+
 #navbar .container .brand-logo {
   padding-right: 15px;
   float: left;
@@ -235,6 +239,10 @@ section {
 
 #quiz-poll.poll-part {
   padding-bottom: 100px;
+}
+
+#quiz-poll .quiz-header {
+  display: none;
 }
 
 #quiz-poll .container .quiz,
@@ -681,7 +689,7 @@ section {
 
 @media (min-width: 320px) {
   .container {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 
@@ -721,40 +729,45 @@ section {
         -ms-flex-align: end;
             align-items: end;
   }
-  #navbar .showing {
-    display: block !important;
+  #navbar .responsive-menu {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(84, 55, 200, 0.85);
   }
-  #navbar .container .nav-menu-left ul,
-  #navbar .container .nav-menu-right ul {
-    padding: 15px 0;
-    display: flow-root !important;
-  }
-  #navbar .container .nav-menu-left ul li,
-  #navbar .container .nav-menu-right ul li {
-    padding: 8px 0;
+  #navbar .responsive-menu ul li {
+    padding: 8px 0px;
+    margin: 35px 0;
     text-align: center;
-    margin: 10px 0;
   }
-  #navbar .container .nav-menu-left ul li a,
-  #navbar .container .nav-menu-right ul li a {
+  #navbar .responsive-menu ul li a {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
   }
-  #navbar .container .nav-menu-left ul li a.btn,
-  #navbar .container .nav-menu-right ul li a.btn {
+  #navbar .responsive-menu ul li a.btn {
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
     color: #5337c8;
     background-color: #ffffff;
   }
-  #navbar .container .nav-menu-left {
+  #navbar .showing {
+    visibility: visible !important;
+  }
+  #navbar .container .nav-menu-left,
+  #navbar .container .nav-menu-right {
     display: none;
-    width: 100%;
-    height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 10px;
-    background-color: rgba(84, 55, 200, 0.9);
   }
   #navbar .container.toggle-nav {
     position: relative;
@@ -768,6 +781,7 @@ section {
             transform: translateY(-50%);
   }
   #navbar .container.toggle-nav .toggle-btn .toggle-navbar {
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -777,12 +791,6 @@ section {
   #navbar .container.toggle-nav .toggle-btn .toggle-navbar i {
     font-size: 25px;
     color: #ffffff;
-  }
-  #navbar .container.toggle-nav .menu-list-left {
-    display: block !important;
-  }
-  #navbar .container.toggle-nav .menu-list-right {
-    display: none !important;
   }
   #banner {
     padding-bottom: 50px;
@@ -838,15 +846,27 @@ section {
     margin-left: 25px;
   }
   #quiz-poll {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
   }
   #quiz-poll.quiz-part {
-    padding-top: 50px;
+    padding-top: 0px;
   }
   #quiz-poll.poll-part {
     padding-bottom: 50px;
+  }
+  #quiz-poll .quiz-header {
+    display: block;
+  }
+  #quiz-poll .quiz-header h3 {
+    font-size: 20px;
+    text-align: center;
+    background: #f9f9fb;
+    padding: 20px 0;
+  }
+  #quiz-poll .quiz-header h3 span {
+    color: #5337c8;
   }
   #quiz-poll .container .poll {
     padding-top: 0;
@@ -869,6 +889,7 @@ section {
     text-align: center;
     background: #f9f9fb;
     padding: 20px 0;
+    display: none;
   }
   #quiz-poll .container .quiz .quiz-text .quiz-features,
   #quiz-poll .container .quiz .poll-text .quiz-features,
@@ -933,6 +954,9 @@ section {
   #webs-tabs .container .tabs-nav {
     padding-bottom: 0px;
   }
+  #webs-tabs .container .tabs-nav ul li {
+    margin-bottom: 14px;
+  }
   #webs-tabs .container .tabs-nav ul li a {
     width: 145px;
     padding: 10px 0;
@@ -948,10 +972,10 @@ section {
     margin-bottom: 15px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 18%;
-    left: 18%;
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    top: 13%;
+    left: 0%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   #try-btn {
     padding: 35px 0;
@@ -1072,42 +1096,45 @@ section {
         -ms-flex-align: end;
             align-items: end;
   }
-  #navbar .showing {
-    display: block !important;
+  #navbar .responsive-menu {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(84, 55, 200, 0.85);
   }
-  #navbar .container .nav-menu-left ul,
-  #navbar .container .nav-menu-right ul {
-    padding: 15px 0;
-    display: flow-root !important;
-  }
-  #navbar .container .nav-menu-left ul li,
-  #navbar .container .nav-menu-right ul li {
-    padding: 8px 0;
+  #navbar .responsive-menu ul li {
+    padding: 8px 0px;
+    margin: 35px 0;
     text-align: center;
-    margin: 10px 0;
   }
-  #navbar .container .nav-menu-left ul li a,
-  #navbar .container .nav-menu-right ul li a {
+  #navbar .responsive-menu ul li a {
     color: #fff;
     font-size: 24px;
     font-weight: 700;
   }
-  #navbar .container .nav-menu-left ul li a.btn,
-  #navbar .container .nav-menu-right ul li a.btn {
+  #navbar .responsive-menu ul li a.btn {
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
     color: #5337c8;
     background-color: #ffffff;
   }
-  #navbar .container .nav-menu-left {
+  #navbar .showing {
+    visibility: visible !important;
+  }
+  #navbar .container .nav-menu-left,
+  #navbar .container .nav-menu-right {
     display: none;
-    width: 100%;
-    height: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 10px;
-    -webkit-transition: all 10s ease-in-out;
-    transition: all 10s ease-in-out;
-    background-color: rgba(84, 55, 200, 0.9);
   }
   #navbar .container.toggle-nav {
     position: relative;
@@ -1121,6 +1148,7 @@ section {
             transform: translateY(-50%);
   }
   #navbar .container.toggle-nav .toggle-btn .toggle-navbar {
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1130,12 +1158,6 @@ section {
   #navbar .container.toggle-nav .toggle-btn .toggle-navbar i {
     font-size: 25px;
     color: #ffffff;
-  }
-  #navbar .container.toggle-nav .menu-list-left {
-    display: block !important;
-  }
-  #navbar .container.toggle-nav .menu-list-right {
-    display: none !important;
   }
   #banner {
     padding-bottom: 50px;
@@ -1188,15 +1210,27 @@ section {
     margin-left: 25px;
   }
   #quiz-poll {
-    padding-top: 50px;
+    padding-top: 00px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
   }
   #quiz-poll.quiz-part {
-    padding-top: 50px;
+    padding-top: 0px;
   }
   #quiz-poll.poll-part {
     padding-bottom: 50px;
+  }
+  #quiz-poll .quiz-header {
+    display: block;
+  }
+  #quiz-poll .quiz-header h3 {
+    font-size: 20px;
+    text-align: center;
+    background: #f9f9fb;
+    padding: 20px 0;
+  }
+  #quiz-poll .quiz-header h3 span {
+    color: #5337c8;
   }
   #quiz-poll .container .poll {
     padding-top: 0;
@@ -1215,10 +1249,7 @@ section {
   #quiz-poll .container .quiz .poll-text h3,
   #quiz-poll .container .poll .quiz-text h3,
   #quiz-poll .container .poll .poll-text h3 {
-    font-size: 20px;
-    text-align: center;
-    background: #f9f9fb;
-    padding: 20px 0;
+    display: none;
   }
   #quiz-poll .container .quiz .quiz-text .quiz-features,
   #quiz-poll .container .quiz .poll-text .quiz-features,

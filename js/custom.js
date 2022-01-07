@@ -63,14 +63,14 @@ $(function () {
 
   // toggle navbar button //
   $(".toggle-navbar").on("click", function () {
-    $(".nav-menu-left").toggleClass("showing");
+    $(".responsive-menu").toggleClass("showing");
   });
 
   /*** Vid musklick på länk e mneyn så plockas classen showing bort***/
-  $(".nav-menu-left li").on("click", function () {
-    $(".nav-menu-left").removeClass("showing");
+  $(".responsive-menu li").on("click", function () {
+    $(".responsive-menu").removeClass("showing");
   });
   if ($(this).scrollbottom() > 10) {
-    $(".nav-menu-left").removeClass("showing");
+    $(".responsive-menu").removeClass("showing");
   }
 });

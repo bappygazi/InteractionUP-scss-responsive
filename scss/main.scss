@@ -57,6 +57,9 @@ section {
   &.navbg {
     background: #000000;
   }
+  .responsive-menu {
+    display: none;
+  }
   .container {
     .brand-logo {
       padding-right: 15px;
@@ -187,6 +190,9 @@ section {
   }
   &.poll-part {
     padding-bottom: 100px;
+  }
+  .quiz-header {
+    display: none;
   }
   .container {
     .quiz,
@@ -534,7 +540,7 @@ section {
 }
 @media (min-width: 320px) {
   .container {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 @media (min-width: 576px) {
@@ -570,36 +576,42 @@ section {
   }
   // navbar part css//
   #navbar {
-    .showing {
-      display: block !important;
-    }
-    .container {
-      .nav-menu-left ul,
-      .nav-menu-right ul {
-        padding: 15px 0;
-        display: flow-root !important;
+    .responsive-menu {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      position: absolute;
+      visibility: hidden;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(84, 55, 200, 0.85);
+      ul {
         li {
-          padding: 8px 0;
+          padding: 8px 0px;
+          margin: 35px 0;
           text-align: center;
-          margin: 10px 0;
           a {
             color: #fff;
             font-size: 24px;
             font-weight: 700;
             &.btn {
+              font-weight: 700;
+              padding: 10px 20px;
+              border-radius: 10px;
               color: #5337c8;
               background-color: #ffffff;
             }
           }
         }
       }
-      .nav-menu-left {
+    }
+    .showing {
+      visibility: visible !important;
+    }
+    .container {
+      .nav-menu-left,
+      .nav-menu-right {
         display: none;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        border-radius: 10px;
-        background-color: rgba(84, 55, 200, 0.9);
       }
       &.toggle-nav {
         position: relative;
@@ -610,6 +622,7 @@ section {
           position: absolute;
           transform: translateY(-50%);
           .toggle-navbar {
+            cursor: pointer;
             display: flex;
             border: 0;
             background-color: transparent;
@@ -618,12 +631,6 @@ section {
               color: #ffffff;
             }
           }
-        }
-        .menu-list-left {
-          display: block !important;
-        }
-        .menu-list-right {
-          display: none !important;
         }
       }
     }
@@ -682,14 +689,26 @@ section {
   }
   // quiz-poll part css //
   #quiz-poll {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
     &.quiz-part {
-      padding-top: 50px;
+      padding-top: 0px;
     }
     &.poll-part {
       padding-bottom: 50px;
+    }
+    .quiz-header {
+      display: block;
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        background: #f9f9fb;
+        padding: 20px 0;
+        span {
+          color: #5337c8;
+        }
+      }
     }
     .container {
       .poll {
@@ -706,6 +725,7 @@ section {
             text-align: center;
             background: #f9f9fb;
             padding: 20px 0;
+            display: none;
           }
           .quiz-features {
             text-align: center;
@@ -778,6 +798,7 @@ section {
         padding-bottom: 0px;
         ul {
           li {
+            margin-bottom: 14px;
             a {
               width: 145px;
               padding: 10px 0;
@@ -795,9 +816,9 @@ section {
           margin-bottom: 15px;
         }
         .tabs-text {
-          top: 18%;
-          left: 18%;
-          transform: translateX(-10%);
+          top: 13%;
+          left: 0%;
+          transform: translateX(0);
         }
       }
     }
@@ -913,37 +934,42 @@ section {
   }
   // navbar part css//
   #navbar {
-    .showing {
-      display: block !important;
-    }
-    .container {
-      .nav-menu-left ul,
-      .nav-menu-right ul {
-        padding: 15px 0;
-        display: flow-root !important;
+    .responsive-menu {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      position: absolute;
+      visibility: hidden;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(84, 55, 200, 0.85);
+      ul {
         li {
-          padding: 8px 0;
+          padding: 8px 0px;
+          margin: 35px 0;
           text-align: center;
-          margin: 10px 0;
           a {
             color: #fff;
             font-size: 24px;
             font-weight: 700;
             &.btn {
+              font-weight: 700;
+              padding: 10px 20px;
+              border-radius: 10px;
               color: #5337c8;
               background-color: #ffffff;
             }
           }
         }
       }
-      .nav-menu-left {
+    }
+    .showing {
+      visibility: visible !important;
+    }
+    .container {
+      .nav-menu-left,
+      .nav-menu-right {
         display: none;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        border-radius: 10px;
-        transition: all 10s ease-in-out;
-        background-color: rgba(84, 55, 200, 0.9);
       }
       &.toggle-nav {
         position: relative;
@@ -954,6 +980,7 @@ section {
           position: absolute;
           transform: translateY(-50%);
           .toggle-navbar {
+            cursor: pointer;
             display: flex;
             border: 0;
             background-color: transparent;
@@ -962,12 +989,6 @@ section {
               color: #ffffff;
             }
           }
-        }
-        .menu-list-left {
-          display: block !important;
-        }
-        .menu-list-right {
-          display: none !important;
         }
       }
     }
@@ -1023,14 +1044,26 @@ section {
   }
   // quiz-poll part css //
   #quiz-poll {
-    padding-top: 50px;
+    padding-top: 00px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
     &.quiz-part {
-      padding-top: 50px;
+      padding-top: 0px;
     }
     &.poll-part {
       padding-bottom: 50px;
+    }
+    .quiz-header {
+      display: block;
+      h3 {
+        font-size: 20px;
+        text-align: center;
+        background: #f9f9fb;
+        padding: 20px 0;
+        span {
+          color: #5337c8;
+        }
+      }
     }
     .container {
       .poll {
@@ -1043,10 +1076,7 @@ section {
         .quiz-text,
         .poll-text {
           h3 {
-            font-size: 20px;
-            text-align: center;
-            background: #f9f9fb;
-            padding: 20px 0;
+            display: none;
           }
           .quiz-features {
             text-align: center;
