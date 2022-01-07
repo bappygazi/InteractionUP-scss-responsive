@@ -372,12 +372,12 @@ section {
   padding: 50px 0;
 }
 
-#webs-tabs .container {
-  position: relative;
+#webs-tabs .m-webs-header {
+  display: none;
 }
 
-#webs-tabs .container .m-webs-header {
-  display: none;
+#webs-tabs .container {
+  position: relative;
 }
 
 #webs-tabs .container .d-webs-header {
@@ -911,11 +911,13 @@ section {
     display: none;
   }
   #features {
-    padding: 50px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
     border-top: 10px solid #5337c8;
   }
   #features .container .features-header h3 {
     font-size: 20px;
+    margin-bottom: 30px;
   }
   #features .container .features-items {
     background: #fff;
@@ -937,11 +939,22 @@ section {
     font-size: 12px;
   }
   #webs-tabs {
+    padding-top: 0;
     border-top: 10px solid #5337c8;
   }
-  #webs-tabs .container .m-webs-header {
+  #webs-tabs .m-webs-header {
     display: block;
     padding-top: 0;
+  }
+  #webs-tabs .m-webs-header h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: #f9f9fb;
+    padding: 20px 0;
+  }
+  #webs-tabs .m-webs-header h3 span {
+    color: #5337c8;
   }
   #webs-tabs .container .d-webs-header {
     display: none;
@@ -972,7 +985,7 @@ section {
     margin-bottom: 15px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 13%;
+    top: -13%;
     left: 0%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -1271,11 +1284,13 @@ section {
     display: none;
   }
   #features {
-    padding: 50px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
     border-top: 10px solid #5337c8;
   }
   #features .container .features-header h3 {
     font-size: 20px;
+    margin-bottom: 30px;
   }
   #features .container .features-items {
     background: #fff;
@@ -1295,10 +1310,21 @@ section {
   }
   #webs-tabs {
     border-top: 10px solid #5337c8;
+    padding-top: 0;
   }
-  #webs-tabs .container .m-webs-header {
+  #webs-tabs .m-webs-header {
     display: block;
     padding-top: 0;
+  }
+  #webs-tabs .m-webs-header h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+    background-color: #f9f9fb;
+    padding: 20px 0;
+  }
+  #webs-tabs .m-webs-header h3 span {
+    color: #5337c8;
   }
   #webs-tabs .container .d-webs-header {
     display: none;
@@ -1321,7 +1347,7 @@ section {
     margin-bottom: 15px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 10%;
+    top: -10%;
     left: 18%;
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
