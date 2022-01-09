@@ -409,6 +409,7 @@ section {
 #webs-tabs .container .webs-header h3 {
   font-size: 60px;
   font-weight: 700;
+  padding-bottom: 100px;
 }
 
 #webs-tabs .container .webs-header h3 span {
@@ -481,8 +482,8 @@ section {
 }
 
 #webs-tabs .container .tabs-content .tabs-text {
-  left: 15px;
-  top: 70%;
+  left: 0;
+  top: 41%;
   position: absolute;
 }
 
@@ -1543,10 +1544,10 @@ section {
     padding-top: 0px;
   }
   #webs-tabs .container .webs-header h3 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   #webs-tabs .container .tabs-nav {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
     padding-right: 30%;
@@ -1691,8 +1692,8 @@ section {
     height: 180px;
   }
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 74%;
-    left: 0;
+    top: 42%;
+    left: 4px;
     font-size: 15px;
   }
   .lg-between {
@@ -1727,7 +1728,8 @@ section {
 
 @media (min-width: 1400px) and (max-width: 1920px) {
   #webs-tabs .container .tabs-content .tabs-text {
-    top: 70%;
+    top: 40%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
