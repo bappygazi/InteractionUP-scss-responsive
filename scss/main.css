@@ -158,7 +158,6 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-image: url(../images/banner.png);
 }
 
@@ -171,16 +170,17 @@ section {
 #banner .container .banner-content h4 {
   color: #ffffff;
   font-weight: 300;
-  font-size: 3.5em;
+  font-size: 45px;
   padding-bottom: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 160px;
 }
 
 #banner .container .banner-content h2 {
   top: 22%;
   color: #ffffff;
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 45px;
+  line-height: 1.5;
   position: absolute;
 }
 
@@ -1471,6 +1471,19 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  #navbar {
+    height: 50px;
+  }
+  #banner .container .banner-content h4 {
+    font-size: 40px;
+  }
+  #banner .container .banner-content h2 {
+    font-size: 40px;
+  }
+  #navbar .container .nav-menu-left ul li a,
+  #navbar .container .nav-menu-right ul li a {
+    font-size: 10px;
+  }
   #navbar .container .nav-menu-left ul li,
   #navbar .container .nav-menu-right ul li {
     padding: 8px 6px;
@@ -1489,6 +1502,19 @@ section {
   #banner .container .banner-items .banner-item .banner-item-text i {
     font-size: 35px;
     margin-bottom: 5px;
+  }
+  #quiz-poll.quiz-part {
+    padding-top: 50px;
+  }
+  #quiz-poll.poll-part {
+    padding-bottom: 50px;
+  }
+  #features .container .features-header h3 {
+    font-size: 30px;
+  }
+  #quiz-poll .container .quiz .quiz-text h3,
+  #quiz-poll .container .poll .quiz-text h3 {
+    font-size: 35px;
   }
   #features .features-items .features-icon {
     width: 120px;
@@ -1644,7 +1670,7 @@ section {
     font-size: 1.87em;
   }
   #banner .container .banner-content h4 {
-    padding-bottom: 160px;
+    padding-bottom: 140px;
   }
   #banner .container .banner-items .banner-item .banner-item-text p {
     font-size: 14px;
