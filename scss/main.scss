@@ -131,16 +131,17 @@ section {
       h4 {
         color: #ffffff;
         font-weight: 300;
-        font-size: 40px;
+        font-size: 45px;
         padding-bottom: 20px;
         padding-bottom: 160px;
       }
       h2 {
         top: 22%;
         left: 50%;
+        width: 100%;
         color: #ffffff;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 45px;
         line-height: 1.5;
         position: absolute;
         transform: translateX(-50%);
@@ -652,15 +653,16 @@ section {
     .container {
       .banner-content {
         h4 {
-          font-size: 22px !important;
+          font-size: 14px !important;
           padding-bottom: 60px;
         }
         h2 {
-          font-size: 22px;
+          font-size: 14px;
         }
         .banner-btn {
           width: 150px;
           margin-top: 60px;
+          font-size: 14px;
         }
       }
       .banner-items {
@@ -1477,19 +1479,16 @@ section {
     font-size: 14px;
   }
   #banner .container .banner-content h4 {
-    font-size: 34px;
+    font-size: 40px;
   }
   #banner .container .banner-content h2 {
-    font-size: 34px;
+    font-size: 40px;
   }
   #banner .container .banner-items .banner-item .banner-item-text h3 {
     font-size: 1.87em;
   }
   #banner .container .banner-content h4 {
-    padding-bottom: 120px;
-  }
-  #banner .container .banner-content .banner-btn {
-    margin-top: 90px;
+    padding-bottom: 140px;
   }
   #banner .container .banner-items .banner-item .banner-item-text p {
     font-size: 14px;
