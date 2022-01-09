@@ -13,7 +13,7 @@ $(function () {
   //==== type js ====//
 
   $(".typed").typed({
-    strings: ["new realtime interactive reality to your web.", "income increase from advertising ads.", "interactive online tool to immediately boost your CTA."],
+    strings: ["new realtime interactive <br> reality to your web.", "income increase from advertising<br> ads.", "interactive online tool to <br> immediately boost your CTA."],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed

@@ -131,17 +131,19 @@ section {
       h4 {
         color: #ffffff;
         font-weight: 300;
-        font-size: 45px;
+        font-size: 40px;
         padding-bottom: 20px;
         padding-bottom: 160px;
       }
       h2 {
         top: 22%;
+        left: 50%;
         color: #ffffff;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 1.5;
         position: absolute;
+        transform: translateX(-50%);
       }
       .banner-btn {
         margin-top: 130px;
@@ -1474,11 +1476,20 @@ section {
   #navbar .container .nav-menu-right ul li a {
     font-size: 14px;
   }
+  #banner .container .banner-content h4 {
+    font-size: 34px;
+  }
+  #banner .container .banner-content h2 {
+    font-size: 34px;
+  }
   #banner .container .banner-items .banner-item .banner-item-text h3 {
     font-size: 1.87em;
   }
   #banner .container .banner-content h4 {
-    padding-bottom: 140px;
+    padding-bottom: 120px;
+  }
+  #banner .container .banner-content .banner-btn {
+    margin-top: 90px;
   }
   #banner .container .banner-items .banner-item .banner-item-text p {
     font-size: 14px;
