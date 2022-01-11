@@ -75,9 +75,12 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 #navbar .container .brand-logo a {
+  color: #f9f9fb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
