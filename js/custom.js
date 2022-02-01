@@ -13,21 +13,21 @@ $(function () {
   //==== type js ====//
 
   $(".typed").typed({
-    strings: ["new realtime interactive <br> reality to your web.", "income increase from advertising<br> ads.", "interactive online tool to <br> immediately boost your CTA."],
+    strings: ["real-time interaction to web", "income increase from advertising", "immediate boost of Call to action"],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
-    typeSpeed: 30,
+    typeSpeed: 18,
     // time before typing starts
-    startDelay: 400,
+    startDelay: 300,
     // backspacing speed
-    backSpeed: 20,
+    backSpeed: 1,
     // time before backspacing
-    backDelay: 500,
+    backDelay: 1500,
     // loop
     loop: true,
     // false = infinite
-    loopCount: 5,
+    loopCount: 20,
     // show cursor
     showCursor: false,
     // character for cursor
