@@ -812,14 +812,6 @@ section {
   font-weight: 700;
 }
 
-#pricing .pricing-content .choose-plan .toggle-btn span.monthly {
-  color: #5337c8;
-}
-
-#pricing .pricing-content .choose-plan .toggle-btn span.yearly {
-  color: #aeb2b3;
-}
-
 #pricing .pricing-content .choose-plan .toggle-btn input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -851,7 +843,7 @@ section {
 }
 
 #pricing .pricing-content .choose-plan .toggle-btn input:checked + label {
-  background: #5337c8;
+  background: #aeb2b3;
 }
 
 #pricing .pricing-content .choose-plan .toggle-btn input:checked + label:after {

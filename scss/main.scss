@@ -635,6 +635,7 @@ section {
   padding-top: 180px;
   padding-bottom: 50px;
   background: #d8d8d8;
+
   .pricing-content {
     position: relative;
     .choose-plan {
@@ -653,12 +654,6 @@ section {
         span {
           margin: 0 10px;
           font-weight: 700;
-          &.monthly {
-            color: #5337c8;
-          }
-          &.yearly {
-            color: #aeb2b3;
-          }
         }
         input[type="checkbox"] {
           height: 0;
@@ -687,7 +682,7 @@ section {
           }
         }
         input:checked + label {
-          background: #5337c8;
+          background: #aeb2b3;
         }
         input:checked + label:after {
           left: calc(100% - 5px);

@@ -68,7 +68,7 @@
                 <h3>Choose your <span>plan</span></h3>
                 <div class="toggle-btn">
                   <span class="monthly">Monthly</span>
-                  <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                  <input type="checkbox" id="switch" onclick="check()" ; /><label for="switch">Toggle</label>
                   <span class="yearly">Yearly</span>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                       <div class="plan-table-header">
                         <div class="plan-table-header-text">
                           <h4>Free</h4>
-                          <h5>0<sub>€</sub></h5>
+                          <h5><label class="monthly_price">0</label><label class="yearly_price">0</label><sub>€</sub></h5>
                           <p>forever</p>
                         </div>
                         <div class="price-btn">
@@ -130,7 +130,7 @@
                       <div class="plan-table-header">
                         <div class="plan-table-header-text">
                           <h4>Basic</h4>
-                          <h5>50<sub>€</sub></h5>
+                          <h5><label class="monthly_price">50</label><label class="yearly_price">100</label><sub>€</sub></h5>
                           <p>per month</p>
                         </div>
                         <div class="price-btn">
@@ -168,7 +168,7 @@
                       <div class="plan-table-header">
                         <div class="plan-table-header-text">
                           <h4>Advanced</h4>
-                          <h5>150<sub>€</sub></h5>
+                          <h5><label class="monthly_price">150</label><label class="yearly_price">300</label><sub>€</sub></h5>
                           <p>per month</p>
                         </div>
                         <div class="price-btn">
@@ -208,7 +208,7 @@
                       <div class="plan-table-header">
                         <div class="plan-table-header-text">
                           <h4>Professional</h4>
-                          <h5>300<sub>€</sub></h5>
+                          <h5><label class="monthly_price">300</label><label class="yearly_price">600</label><sub>€</sub></h5>
                           <p>per month</p>
                         </div>
                         <div class="price-btn">
@@ -256,7 +256,7 @@
                   <div class="plan-table-header">
                     <div class="plan-table-header-text">
                       <h4>Free</h4>
-                      <h5>0<sub>€</sub> <span>/ forever</span></h5>
+                      <h5><label class="monthly_price">0</label><label class="yearly_price">0</label> <sub>€</sub> <span>/ forever</span></h5>
                     </div>
                     <div class="price-btn">
                       <button class="btn">Try now</button>
@@ -280,7 +280,7 @@
                   <div class="plan-table-header">
                     <div class="plan-table-header-text">
                       <h4>Basic</h4>
-                      <h5>50 <sub>€</sub> <span> / monthly</span></h5>
+                      <h5><label class="monthly_price">50</label><label class="yearly_price">100</label> <sub>€</sub> <span> / monthly</span></h5>
                     </div>
                     <div class="price-btn">
                       <button class="btn">Buy now</button>
@@ -305,7 +305,7 @@
                   <div class="plan-table-header">
                     <div class="plan-table-header-text">
                       <h4>Advanced</h4>
-                      <h5>150<sub>€</sub> <span>/ monthly</span></h5>
+                      <h5><label class="monthly_price">150</label><label class="yearly_price">300</label><sub>€</sub> <span>/ monthly</span></h5>
                     </div>
                     <div class="price-btn">
                       <button class="btn">Buy now</button>
@@ -329,7 +329,7 @@
                   <div class="plan-table-header">
                     <div class="plan-table-header-text">
                       <h4>Professional</h4>
-                      <h5>300<sub>€</sub> <span>/ monthly</span></h5>
+                      <h5><label class="monthly_price">300</label><label class="yearly_price">600</label><sub>€</sub> <span>/ monthly</span></h5>
                     </div>
                     <div class="price-btn">
                       <button class="btn">Buy now</button>
