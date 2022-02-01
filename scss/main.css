@@ -843,7 +843,7 @@ section {
 }
 
 #pricing .pricing-content .choose-plan .toggle-btn input:checked + label {
-  background: #aeb2b3;
+  background: #5337c8;
 }
 
 #pricing .pricing-content .choose-plan .toggle-btn input:checked + label:after {
