@@ -1417,11 +1417,14 @@ section {
           &:hover,
           &.active {
             background-color: #5337c8;
-            .plan-table-header-text {
-              h5 {
-                color: #ffffff;
-                span {
+            .plan-table-header {
+              border-color: #ffffff;
+              .plan-table-header-text {
+                h5 {
                   color: #ffffff;
+                  span {
+                    color: #ffffff;
+                  }
                 }
               }
             }

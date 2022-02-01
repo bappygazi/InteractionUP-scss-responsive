@@ -1658,10 +1658,13 @@ section {
   #pricing .pricing-content .price-table .price-table-plan:hover, #pricing .pricing-content .price-table .price-table-plan.active {
     background-color: #5337c8;
   }
-  #pricing .pricing-content .price-table .price-table-plan:hover .plan-table-header-text h5, #pricing .pricing-content .price-table .price-table-plan.active .plan-table-header-text h5 {
+  #pricing .pricing-content .price-table .price-table-plan:hover .plan-table-header, #pricing .pricing-content .price-table .price-table-plan.active .plan-table-header {
+    border-color: #ffffff;
+  }
+  #pricing .pricing-content .price-table .price-table-plan:hover .plan-table-header .plan-table-header-text h5, #pricing .pricing-content .price-table .price-table-plan.active .plan-table-header .plan-table-header-text h5 {
     color: #ffffff;
   }
-  #pricing .pricing-content .price-table .price-table-plan:hover .plan-table-header-text h5 span, #pricing .pricing-content .price-table .price-table-plan.active .plan-table-header-text h5 span {
+  #pricing .pricing-content .price-table .price-table-plan:hover .plan-table-header .plan-table-header-text h5 span, #pricing .pricing-content .price-table .price-table-plan.active .plan-table-header .plan-table-header-text h5 span {
     color: #ffffff;
   }
   #pricing .pricing-content .price-table .price-table-plan:hover ul, #pricing .pricing-content .price-table .price-table-plan.active ul {
