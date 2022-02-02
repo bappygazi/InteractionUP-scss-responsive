@@ -1077,20 +1077,23 @@ section {
   }
   // banner part css//
   #banner {
-    padding-bottom: 100px;
+    height: 100vh;
     position: relative;
+    padding: 0;
     .container {
       .banner-content {
+        padding-top: 190px;
         h4 {
           font-size: 20px !important;
           padding-bottom: 60px;
         }
         h2 {
           font-size: 32px;
+          top: 52%;
         }
         .banner-btn {
           width: 150px;
-          margin-top: 160px;
+          margin-top: 200px;
           font-size: 14px;
         }
       }
@@ -1615,20 +1618,23 @@ section {
   }
   // banner part css//
   #banner {
-    padding-bottom: 100px;
-
+    height: 100vh;
+    position: relative;
+    padding: 0;
     .container {
       .banner-content {
+        padding-top: 190px;
         h4 {
           font-size: 20px !important;
           padding-bottom: 60px;
         }
         h2 {
           font-size: 32px;
+          top: 52%;
         }
         .banner-btn {
           width: 150px;
-          margin-top: 160px;
+          margin-top: 200px;
           font-size: 14px;
         }
       }
