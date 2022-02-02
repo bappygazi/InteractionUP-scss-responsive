@@ -73,9 +73,20 @@ function check() {
   var checkBox = document.getElementById("switch");
   var monthly_price = document.getElementsByClassName("monthly_price");
   var yearly_price = document.getElementsByClassName("yearly_price");
+  var perMonth = document.getElementsByClassName("perMonth");
+  var perYear = document.getElementsByClassName("perYear");
   var monthly = document.getElementsByClassName("monthly");
   var yearly = document.getElementsByClassName("yearly");
 
+  for (var i = 0; i < monthly.length; i++) {
+    if (checkBox.checked == true) {
+      monthly[i].style.color = "#b6babb";
+      yearly[i].style.color = "#5337c8";
+    } else if (checkBox.checked == false) {
+      monthly[i].style.color = "#5337c8";
+      yearly[i].style.color = "#b6babb";
+    }
+  }
   for (var i = 0; i < monthly_price.length; i++) {
     if (checkBox.checked == true) {
       monthly_price[i].style.display = "none";
@@ -85,13 +96,13 @@ function check() {
       yearly_price[i].style.display = "none";
     }
   }
-  for (var i = 0; i < monthly.length; i++) {
+  for (var i = 0; i < perMonth.length; i++) {
     if (checkBox.checked == true) {
-      monthly[i].style.color = "#b6babb";
-      yearly[i].style.color = "#5337c8";
+      perMonth[i].style.display = "none";
+      perYear[i].style.display = "inline";
     } else if (checkBox.checked == false) {
-      monthly[i].style.color = "#5337c8";
-      yearly[i].style.color = "#b6babb";
+      perMonth[i].style.display = "inline";
+      perYear[i].style.display = "none";
     }
   }
 }
