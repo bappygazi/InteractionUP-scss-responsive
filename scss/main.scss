@@ -142,6 +142,7 @@ section {
 
 // banner part css//
 #banner {
+  position: relative;
   padding-top: 180px;
   padding-bottom: 100px;
   background-size: cover;
@@ -1077,6 +1078,7 @@ section {
   // banner part css//
   #banner {
     padding-bottom: 50px;
+    position: relative;
     .container {
       .banner-content {
         h4 {
@@ -1093,8 +1095,15 @@ section {
         }
       }
       .banner-items {
+        top: 416px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
         display: inherit;
-        padding-top: 75px;
+        padding: 50px 0;
+        border-top: 10px solid #5337c8;
+        background-color: #ffffff;
         .banner-item {
           height: 55px;
           width: 225px;
@@ -1136,6 +1145,7 @@ section {
     border-top: 10px solid #5337c8;
     &.quiz-part {
       padding-top: 0px;
+      margin-top: 434px !important;
     }
     &.poll-part {
       padding-bottom: 50px;
@@ -1621,8 +1631,14 @@ section {
         }
       }
       .banner-items {
+        top: 405px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
         display: inherit;
-        padding-top: 75px;
+        padding: 50px 0;
+        border-top: 10px solid #5337c8;
         .banner-item {
           height: 55px;
           width: 290px;
@@ -1656,11 +1672,12 @@ section {
   }
   // quiz-poll part css //
   #quiz-poll {
-    padding-top: 00px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
     &.quiz-part {
       padding-top: 0px;
+      margin-top: 434px;
     }
     &.poll-part {
       padding-bottom: 50px;

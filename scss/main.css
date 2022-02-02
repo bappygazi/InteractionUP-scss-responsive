@@ -183,6 +183,7 @@ section {
 }
 
 #banner {
+  position: relative;
   padding-top: 180px;
   padding-bottom: 100px;
   background-size: cover;
@@ -1313,6 +1314,7 @@ section {
   }
   #banner {
     padding-bottom: 50px;
+    position: relative;
   }
   #banner .container .banner-content h4 {
     font-size: 14px !important;
@@ -1327,8 +1329,15 @@ section {
     font-size: 14px;
   }
   #banner .container .banner-items {
+    top: 416px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
     display: inherit;
-    padding-top: 75px;
+    padding: 50px 0;
+    border-top: 10px solid #5337c8;
+    background-color: #ffffff;
   }
   #banner .container .banner-items .banner-item {
     height: 55px;
@@ -1374,6 +1383,7 @@ section {
   }
   #quiz-poll.quiz-part {
     padding-top: 0px;
+    margin-top: 434px !important;
   }
   #quiz-poll.poll-part {
     padding-bottom: 50px;
@@ -1860,8 +1870,14 @@ section {
     margin-top: 50px;
   }
   #banner .container .banner-items {
+    top: 405px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
     display: inherit;
-    padding-top: 75px;
+    padding: 50px 0;
+    border-top: 10px solid #5337c8;
   }
   #banner .container .banner-items .banner-item {
     height: 55px;
@@ -1898,12 +1914,13 @@ section {
     margin-left: 25px;
   }
   #quiz-poll {
-    padding-top: 00px;
+    padding-top: 0px;
     padding-bottom: 50px;
     border-top: 10px solid #5337c8;
   }
   #quiz-poll.quiz-part {
     padding-top: 0px;
+    margin-top: 434px;
   }
   #quiz-poll.poll-part {
     padding-bottom: 50px;
