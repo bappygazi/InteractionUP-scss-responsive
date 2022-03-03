@@ -56,6 +56,10 @@ section {
   margin-left: auto;
 }
 
+.desktop-none {
+  display: none;
+}
+
 #navbar {
   top: 0;
   z-index: 9;
@@ -1249,6 +1253,9 @@ section {
   .d-none {
     display: none;
   }
+  .mobile-block {
+    display: block !important;
+  }
   #navbar .responsive-menu {
     width: 100%;
     height: 100vh;
@@ -1797,6 +1804,9 @@ section {
   .d-none {
     display: none;
   }
+  .mobile-block {
+    display: block !important;
+  }
   #navbar .responsive-menu {
     width: 100%;
     height: 100vh;
@@ -2306,9 +2316,6 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .d-lg-none {
-    display: none;
-  }
   #navbar {
     height: 50px;
   }
@@ -2612,9 +2619,6 @@ section {
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .d-lg-none {
-    display: none;
-  }
   #navbar .container .nav-menu-left ul li a,
   #navbar .container .nav-menu-right ul li a {
     font-size: 14px;
@@ -2687,9 +2691,6 @@ section {
 }
 
 @media (min-width: 1400px) and (max-width: 1920px) {
-  .d-lg-none {
-    display: none;
-  }
   #webs-tabs .container .tabs-content .tabs-text {
     top: 40%;
     left: 0;
